@@ -1,0 +1,11 @@
+public class Journal
+{
+    public List<Entry> entries;
+
+    public Journal;
+
+    public Journal;
+
+    public void Display;
+    public string Export;
+}

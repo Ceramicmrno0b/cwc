@@ -1,0 +1,31 @@
+using System;
+class Program
+{
+    int choice = 0;
+    do {
+        Console.WriteLine("What would you like to do?");
+        Console.WriteLine("1: New Entry");
+        Console.WriteLine("2: View Entries");
+        Console.WriteLine("3: Save Entry");
+        Console.WriteLine("4: Quit");
+        string input = Console.ReadLine();
+        if (int.TryParse(input, out choice)) {
+            if (choice < 1 || choice > 4) {
+                Console.WriteLine("Invalid choice. Please enter a number between 1 and 4.");
+                choice = 0;
+            }
+        } else {
+            Console.WriteLine("Invalid input. Please enter a number between 1 and 4.");
+            choice = 0;
+        }
+    } while (choice == 0);  
+
+    public Journal journal;
+    
+    public string getPrompt;
+
+    public void run;
+
+    public void saveToFile;
+
+}
