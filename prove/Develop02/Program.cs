@@ -1,4 +1,6 @@
 using System;
+using System.Reflection.Metadata;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -52,7 +54,7 @@ class Program
             }
             else if (selection == 2)
             {
-                //Console.WriteLine(LoadFromFile());
+                Console.WriteLine(Journal.entries);
             }
             else if (selection == 3)
             {
@@ -72,7 +74,10 @@ class Program
 
     static public void SaveToFile()
     {
-
+        using(StreamWriter writetext = new StreamWriter("journal.txt"))
+        {
+            writetext.WriteLine();
+        }
     }
 
     static public void LoadFromFile()

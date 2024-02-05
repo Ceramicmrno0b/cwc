@@ -7,7 +7,8 @@ public class Entry
     public Entry(string response, string prompt)
     {
         string date = DateTime.Today.ToString("yyyy-MM-dd");
-        this.response = response;
+        Console.WriteLine(prompt);
+        this.response = Console.ReadLine();
         this.prompt = prompt;
     }
 }
