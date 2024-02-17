@@ -1,9 +1,13 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Scripture scripture = new Scripture();
+        scripture.DisplayScripture();
+        scripture.BlankOutWords();
+        Console.WriteLine("Congrats, you've finished this scripture!");
     }
 }
