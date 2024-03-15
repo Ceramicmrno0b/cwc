@@ -10,26 +10,31 @@ class Program
         string input = Console.ReadLine();
         return int.Parse(input);
     }
-    static public void Run()
+    static public void Main()
     {
         bool keepGoing = true;
+        bool keepGoingA = true;
         while (keepGoing)
         {
+            //bool keepGoingA = true;
             var selection = ShowMenu();
             if (selection == 1)
             {
                 Console.WriteLine("Select Option: \n 1. Create Eternal Goal \n 2. Complete Eternal Goal \n 3. Back");
+                
                 string input = Console.ReadLine();
                 Eternal Eternal = new Eternal();
-                while (keepGoing){
+                while (keepGoingA){
                     if (selection == 1){
                     Eternal.EternalSet();
+                    keepGoingA = false;
                     }
                     if (selection == 2){
                     Eternal.EternalComplete();
+                    keepGoingA = false;
                     }
                     if (selection == 3){
-                    keepGoing = false;
+                    keepGoingA = false;
                     }
                 }
             }
@@ -38,15 +43,17 @@ class Program
                 Console.WriteLine("Select Option: \n 1. Create Simple Goal \n 2. Complete Simple Goal \n 3. Back");
                 string input = Console.ReadLine();
                 Simple Simple = new Simple();
-                while (keepGoing){
+                while (keepGoingA){
                     if (selection == 1){
                     Simple.SimpleSet();
+                    keepGoingA = false;
                     }
                     if (selection == 2){
                     Simple.SimpleComplete();
+                    keepGoingA = false;
                     }
                     if (selection == 3){
-                    keepGoing = false;
+                    keepGoingA = false;
                     }
                 }
             }
@@ -55,15 +62,17 @@ class Program
                 Console.WriteLine("Select Option: \n 1. Create Checklist Goal \n 2. Complete Checklist Goal \n 3. Back");
                 string input = Console.ReadLine();
                 Checklist Checklist = new Checklist();
-                while (keepGoing){
+                while (keepGoingA){
                     if (selection == 1){
                     Checklist.ChecklistSet();
+                    keepGoingA = false;
                     }
                     if (selection == 2){
                     Checklist.ChecklistComplete();
+                    keepGoingA = false;
                     }
                     if (selection == 3){
-                    keepGoing = false;
+                    keepGoingA = false;
                     }
                 }
             }
