@@ -1,0 +1,42 @@
+using System;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
+
+public class Video : Program{
+    public void Listing()
+    {
+    int repeat = Vids.Count;
+    while(repeat != 0)
+    {
+        int instant = repeat - 1;
+        string print = String.Format("Video: {0} by {1}"), Program.Vids[instant], Program.Authors[instant];
+        Console.WriteLine(print);
+        if (repeat == 2)
+        {
+            print = String.Format("{0} comments."), Vid3Comments.Count;
+            Console.WriteLine(print);
+            int comments = Vid3Comments.Count
+            while(comments != 0)
+            {
+            print = String.Format("From {0}: {1}"), ;
+            }
+        }
+        repeat -= 1;
+    }
+    }
+}
+
+
+
+// /* *** String.Format with multiple objects **/
+// string author = "Mahesh Chand";
+// string book = "Graphics Programming with GDI+";
+// int year = 2003;
+// decimal price = 49.95m;
+// string publisher = "APress";
+
+// // Book details
+// string bookDetails = String.Format("{0} is the author of book {1} \n " +
+// "published by {2} in year {3}. \n Book price is ${4}. ",
+// author, book, publisher, year, price);
+// Console.WriteLine(bookDetails);

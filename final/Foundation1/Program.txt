@@ -1,0 +1,25 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Net;
+using System.Reflection.PortableExecutable;
+
+public class Program
+{
+    static void Main(string[] args)
+    {
+        public static List<string> Vids = new List<string>() { "Bird Sounds 10 hours", "Chipi Chipi Original", "Game developers don't want you to know this one neat trick"};
+        public static List<string> Authors = new List<string>() { "TheBirdMan", "SomeMusicChannel", "CatSoftware"};
+        public static List<int> Length = new List<int>() { 99999, 88, 348};
+        public static List<string> Vid1Comments = new List<string>() {"Commentor1", "My cat loves it", "Commentor2", "Somehow different than what's outside?", "Commentor3", "Enter text here"};
+        public static List<string> Vid2Comments = new List<string>() {"Commentor4", "SLowly losing my sanity", "Commentor5", "Why is this a thing", "Commentor6", "My kids won't stop playing this somebody send help", "Commentor7", "Technically a song"};
+        public static List<string> Vid3Comments = new List<string>() {"Commentor8", "As a game dev I can confirm we don't want you to know we are actually aliens", "Commentor9", "I like trains", "Commentor10", "100% clickbait"};
+
+        //Video.Listing(); //fix this at some point
+        new ref1 = Vids[0];
+
+        string print = String.Format("Video: {0}, by {1}, {2} seconds long."), ref1, Authors[0], Length[0];
+        Console.WriteLine(print);
+        print = String.Format("");
+
+    }
+}
