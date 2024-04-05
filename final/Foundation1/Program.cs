@@ -37,7 +37,7 @@ class Program
         {
             new Comment("FBI Official", "We can neither confirm nor deny the legitimacy of this video."),
             new Comment("Homeland Security", "Is this where the defense budget is going?"),
-            new Comment("NotABird69", "If I could make a correction, we don't poop on cars to place trackers, we do it because we like to.")
+            new Comment("NotABird69", "If I could make a correction, we don't poop on cars to place trackers, we do it because it makes people upset.")
         });
 
         Video video2 = new Video("Flying with the power of depression", "Backyard Scientist", 180, new List<Comment>
